@@ -51,7 +51,7 @@ body {
     margin-bottom: 30px;
 }
 
-/* FOTO CIRCULAR MEJORADA */
+/* FOTO CIRCULAR PERFECTA */
 .profile-img {
     width: 130px;
     height: 130px;
@@ -70,12 +70,12 @@ body {
     font-weight: 700;
     margin-bottom: 12px;
     letter-spacing: 1.5px;
-    color: #38bdf8; /* Azul claro de acento */
+    color: #38bdf8;
     border-bottom: 2px solid rgba(56, 189, 248, 0.3);
     padding-bottom: 6px;
 }
 
-/* Lista de contacto */
+/* Lista de contacto y enlaces */
 .contact-list {
     list-style: none;
 }
@@ -93,6 +93,17 @@ body {
     width: 18px;
     color: var(--accent-color);
     font-size: 13px;
+}
+
+.contact-list a {
+    color: var(--text-light);
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+.contact-list a:hover {
+    opacity: 0.8;
+    text-decoration: underline;
 }
 
 /* Bloques de educación */
