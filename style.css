@@ -1,0 +1,235 @@
+/* --- PALETA DE COLORES Y ESTILOS MODERNOS --- */
+:root {
+    --bg-left: #1e293b;        /* Azul pizarra oscuro elegante */
+    --text-light: #f8fafc;     /* Blanco suave */
+    --bg-right: #ffffff;       /* Fondo blanco puro */
+    --text-dark: #0f172a;      /* Texto principal casi negro */
+    --accent-color: #0284c7;   /* Azul vibrante moderno */
+    --secondary-text: #64748b; /* Gris medio para subtítulos */
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    background: linear-gradient(135deg, #0f172a 0%, #334155 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+/* --- CONTENEDOR PRINCIPAL CON SOMBRA --- */
+.main-container {
+    width: 100%;
+    max-width: 850px;
+    background-color: var(--bg-right);
+    display: grid;
+    grid-template-columns: 1fr 1.6fr;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* --- COLUMNA IZQUIERDA --- */
+.left-column {
+    background-color: var(--bg-left);
+    color: var(--text-light);
+    padding: 45px 30px;
+}
+
+.profile-container {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* FOTO CIRCULAR MEJORADA */
+.profile-img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--accent-color);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+}
+
+.sidebar-section {
+    margin-bottom: 25px;
+}
+
+.section-title.light {
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    letter-spacing: 1.5px;
+    color: #38bdf8; /* Azul claro de acento */
+    border-bottom: 2px solid rgba(56, 189, 248, 0.3);
+    padding-bottom: 6px;
+}
+
+/* Lista de contacto */
+.contact-list {
+    list-style: none;
+}
+
+.contact-list li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    word-break: break-all;
+}
+
+.contact-list li i {
+    margin-right: 10px;
+    width: 18px;
+    color: var(--accent-color);
+    font-size: 13px;
+}
+
+/* Bloques de educación */
+.education-item {
+    margin-bottom: 15px;
+}
+
+.edu-title {
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.edu-institution, .edu-year {
+    font-size: 12.5px;
+    color: #cbd5e1;
+}
+
+/* Lista de habilidades e idiomas */
+.skills-list {
+    list-style: none;
+    font-size: 13px;
+}
+
+.skills-list li {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.skills-list li i {
+    margin-right: 8px;
+    font-size: 11px;
+    color: #38bdf8;
+}
+
+/* --- COLUMNA DERECHA --- */
+.right-column {
+    padding: 45px 40px;
+}
+
+/* Encabezado principal */
+.header-main {
+    margin-bottom: 30px;
+}
+
+.header-main h1 {
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 1.1;
+    color: var(--text-dark);
+    letter-spacing: -0.5px;
+}
+
+.job-title {
+    font-size: 14px;
+    color: var(--accent-color);
+    margin-top: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.title-underline {
+    width: 50px;
+    height: 3px;
+    background-color: var(--accent-color);
+    margin-top: 12px;
+    border-radius: 2px;
+}
+
+/* Títulos secciones derecha */
+.section-title.dark {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 15px;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 6px;
+    display: flex;
+    align-items: center;
+}
+
+.section-title.dark i {
+    margin-right: 8px;
+    color: var(--accent-color);
+    font-size: 13px;
+}
+
+/* Contenido perfil */
+.profile-description {
+    font-size: 13.5px;
+    margin-bottom: 30px;
+    color: #334155;
+    text-align: justify;
+}
+
+/* Elementos de experiencia */
+.job-item {
+    margin-bottom: 22px;
+}
+
+.job-role {
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--text-dark);
+}
+
+.job-company {
+    font-size: 13px;
+    color: var(--secondary-text);
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+.job-details {
+    list-style: disc;
+    margin-left: 18px;
+    font-size: 13px;
+    color: #475569;
+}
+
+.job-details li {
+    margin-bottom: 4px;
+}
+
+/* --- RESPONSIVO (Para celulares) --- */
+@media (max-width: 768px) {
+    .main-container {
+        grid-template-columns: 1fr;
+    }
+    body {
+        padding: 10px;
+    }
+    .left-column, .right-column {
+        padding: 30px 20px;
+    }
+    .header-main h1 {
+        font-size: 24px;
+    }
+}
